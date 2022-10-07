@@ -31,7 +31,7 @@ const NavBar = () => {
   }, [location, logout, user?.token]);
 
   return (
-    <div className="flex justify-between items-center shadow-lg h-20 mt-10 rounded-xl lg:space-x-10 px-5">
+    <div className="flex justify-between items-center shadow-lg h-20 mt-2 rounded-xl lg:space-x-10 px-5 mx-10">
       <Link to="/">
         <div className="flex space-x-5 items-center">
           <h2 className="text-3xl text-blue-500">PostCard</h2>

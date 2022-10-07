@@ -14,10 +14,10 @@ const Home = () => {
     dispatch(getPosts());
   }, [currentId, dispatch]);
   return (
-    <div className="mt-10 flex flex-col mb-40">
+    <div className="mt-10 flex w-full  mb-40">
       <Toaster />
       <div className="flex lg:flex-row flex-col-reverse lg:justify-between lg:space-x-4">
-        <div className="flex justify-between items-center lg:w-[70%]">
+        <div className="flex justify-between items-center ">
           <Posts setCurrentId={setCurrentId} />
         </div>
         <div className="lg:w-[30%]">

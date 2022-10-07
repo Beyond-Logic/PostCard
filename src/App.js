@@ -13,8 +13,8 @@ const App = () => {
   return (
     <GoogleOAuthProvider clientId={`${process.env.REACT_APP_GOOGLE_API_TOKEN}`}>
       <Router>
+        <NavBar />
         <Container>
-          <NavBar />
           <Routes>
             <Route path="/" exact element={<Home />} />
             <Route path="/auth" exact element={<Auth />} />
