@@ -41,7 +41,7 @@ const Post = ({ post, setCurrentId }) => {
     );
   };
   return (
-    <div className="w-full h-full">
+    <div className="">
       <div className="shadow-2xl rounded-t-xl rounded-b-xl">
         <div className="relative bg-black opacity-90 rounded-t-xl">
           <img src={post.selectedFile} alt={post.title} />
