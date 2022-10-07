@@ -2,7 +2,7 @@
 
 import axios from "axios";
 const API = axios.create({
-  baseURL: "https://postcard-project.herokuapp.com/posts",
+  baseURL: "https://postcard-project.herokuapp.com",
 });
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
