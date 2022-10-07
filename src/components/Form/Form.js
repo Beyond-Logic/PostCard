@@ -56,7 +56,7 @@ const Form = ({ currentId, setCurrentId }) => {
           </h3>
         </div>
       ) : (
-        <div className="py-8 m-auto lg:w-[80%] w-[90%]">
+        <div className="py-8 m-auto lg:w-[80%]">
           <h5 className="text-center text-xl text-gray-800 mb-4">
             {currentId ? "Editing" : "Creating "} a PostCard
           </h5>
