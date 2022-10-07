@@ -9,7 +9,7 @@ const Posts = ({ currentId, setCurrentId }) => {
   const posts = useSelector((state) => state.posts);
   console.log(posts);
   return !posts.length ? (
-    <div className="lg:-mt-96">
+    <div className="">
       <RotatingSquare
         height="100"
         width="100"
