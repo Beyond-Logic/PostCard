@@ -22,9 +22,9 @@ const Posts = ({ currentId, setCurrentId }) => {
       />
     </div>
   ) : (
-    <div className=" flex space-x-2 md:flex-row flex-col flex-wrap items-center md:space-y-0 space-y-8">
+    <div className=" flex space-x-2 md:flex-row flex-col flex-wrap items-center">
       {posts.map((post) => (
-        <div key={post._id} className="md:w-[48%]">
+        <div key={post._id} className="md:w-[48%] mb-10">
           <Post post={post} setCurrentId={setCurrentId} />
         </div>
       ))}

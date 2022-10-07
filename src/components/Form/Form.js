@@ -47,7 +47,7 @@ const Form = ({ currentId, setCurrentId }) => {
   };
 
   return (
-    <div className="shadow-xl px-10 py-5 mb-20">
+    <div className="shadow-lg mb-20">
       {!user?.result?.name ? (
         <div className="">
           <h3 className="">
@@ -56,7 +56,7 @@ const Form = ({ currentId, setCurrentId }) => {
           </h3>
         </div>
       ) : (
-        <div>
+        <div className="py-8 m-auto lg:w-[80%] w-[90%]">
           <h5 className="text-center text-xl text-gray-800 mb-4">
             {currentId ? "Editing" : "Creating "} a PostCard
           </h5>
