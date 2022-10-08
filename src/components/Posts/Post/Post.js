@@ -42,8 +42,8 @@ const Post = ({ post, setCurrentId }) => {
   };
   return (
     <div className="">
-      <div className="shadow-2xl rounded-t-xl rounded-b-xl">
-        <div className="relative bg-black opacity-90 rounded-t-xl">
+      <div className="shadow-2xl rounded-t-xl rounded-b-xl ">
+        <div className="relative bg-black opacity-90 ">
           <img src={post.selectedFile} alt={post.title} />
           <div className="absolute top-2 left-4 text-white z-10">
             <h5 className="text-base">{post.name}</h5>

@@ -34,7 +34,9 @@ const NavBar = () => {
     <div className="flex justify-between items-center shadow-lg h-20 mt-2 rounded-xl lg:space-x-10 px-5 mx-10">
       <Link to="/">
         <div className="flex space-x-5 items-center">
-          <h2 className="text-3xl text-blue-500">PostCard</h2>
+          <h2 className="md:text-3xl text-lg text-blue-500 font-semibold">
+            PostCard
+          </h2>
         </div>
       </Link>
       {user ? (
@@ -60,7 +62,7 @@ const NavBar = () => {
           />
         </div>
       ) : (
-        <Link to="/auth">
+        <Link to="/auth" className="hidden sm:flex">
           {" "}
           <button className="bg-blue-800 text-base text-white px-8 py-2 rounded-md">
             SIGN IN

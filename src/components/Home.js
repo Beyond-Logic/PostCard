@@ -16,11 +16,11 @@ const Home = () => {
   return (
     <div className="mt-10 flex   mb-40">
       <Toaster />
-      <div className="flex lg:flex-row flex-col-reverse lg:justify-between lg:space-x-4">
-        <div className="flex justify-between items-center ">
+      <div className="flex lg:flex-row flex-col-reverse lg:justify-between w-full ">
+        <div className="flex flex-1">
           <Posts setCurrentId={setCurrentId} />
         </div>
-        <div className="lg:w-[30%]">
+        <div className="lg:w-[30%] w-full text-center">
           <Form currentId={currentId} setCurrentId={setCurrentId} />
         </div>
       </div>

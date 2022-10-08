@@ -9,7 +9,7 @@ const Posts = ({ currentId, setCurrentId }) => {
   const posts = useSelector((state) => state.posts);
   console.log(posts);
   return !posts.length ? (
-    <div className="lg:-mt-96">
+    <div className="flex w-full">
       <RotatingSquare
         height="100"
         width="100"
@@ -22,7 +22,7 @@ const Posts = ({ currentId, setCurrentId }) => {
       />
     </div>
   ) : (
-    <div className=" flex space-x-2 md:flex-row flex-col flex-wrap items-center">
+    <div className=" flex space-x-2 md:flex-row flex-col flex-wrap">
       {posts.map((post) => (
         <div key={post._id} className="md:w-[48%] mb-10">
           <Post post={post} setCurrentId={setCurrentId} />

@@ -35,7 +35,6 @@ const Auth = () => {
       dispatch(signup(formData, router));
     } else {
       dispatch(signin(formData, router));
-     
     }
   };
   const handleChange = (e) => {
@@ -133,7 +132,7 @@ const Auth = () => {
               {" "}
               <GoogleLogin onSuccess={googleSuccess} onError={googleError} />
             </div>
-            <div className="">
+            <div className="text-blue-700">
               <div className="text-center mb-10">
                 <button onClick={switchMode} type="button">
                   {isSignup

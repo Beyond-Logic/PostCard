@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import FileBase from "react-file-base64";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { createPost, updatePost } from "../../actions/posts";
 
 const Form = ({ currentId, setCurrentId }) => {
@@ -43,20 +44,22 @@ const Form = ({ currentId, setCurrentId }) => {
       tags: "",
       selectedFile: "",
     });
-    window.location = "/";
   };
 
   return (
-    <div className="shadow-lg mb-20 m-auto">
+    <div className="py-8 m-auto w-full shadow-lg px-8 mb-14">
       {!user?.result?.name ? (
-        <div className="">
-          <h3 className="">
-            Please sign in to create your own post card and like other's post
-            card
+        <div className="flex justify-center">
+          <h3 className="text-center">
+            Please{" "}
+            <Link to="/auth" className="font-bold text-blue-700">
+              sign in
+            </Link>{" "}
+            to create your own post card and like other's post card
           </h3>
         </div>
       ) : (
-        <div className="py-8 m-auto lg:w-[80%] w-[90%]">
+        <div>
           <h5 className="text-center text-xl text-gray-800 mb-4">
             {currentId ? "Editing" : "Creating "} a PostCard
           </h5>
